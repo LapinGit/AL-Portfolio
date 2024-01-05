@@ -18,44 +18,49 @@ const Development = () => {
         <LuMonitorStop />
       </div>
       {/* TEXT */}
-      <div className="w-[100%] flex justify-center items-center ">
+      <div className="w-[100%] flex justify-center items-center pb-3">
         <p className=" font-sans text-1xl">
           Websites I have designed and coded
         </p>
       </div>
       {/* PROJECTS LINK */}
-      <div className="">
+
+
+      
+      <div className=" ">
         {ProjectsData.map((category) => (
           <Link
             href={category.link}
             key={category.id}
-            className="text-lg tracking-tight mb-4 flex sm:flex-row flex-col sm:p-4 sm:hover:shadow-xl rounded-xl relative group transition-colors duration-300 ease-in-out sm:hover:bg-primary sm:hover:text-background bg-red-500"
+            className="text-lg mb-4  justify-center flex flex=row sm:p-4 rounded-xl bg-red-500"
           >
-            <ArrowUpRight
-              size={18}
-              className="absolute sm:top-0 bottom-0 right-0 sm:mt-4 mt-2 sm:mr-4 mr-2 bg-secondary sm:group-hover:bg-primary sm:group-hover:text-secondary rounded"
-            />
-
+            
             {category.image && (
-              <div className="pb-4 sm:pb-0 sm:w-1/3">
+              <div className="pb-4 sm:pb-0 sm:w-1/3 bg-orange-500 pr-5">
                 <Image
                   alt=""
                   className="rounded-lg"
-                  width={500}
-                  height={200}
+                  width={400}
+                  height={400}
                   src={category.image}
                 />
               </div>
             )}
             
-      <div className="text-xl sm:ml-5 sm:w-2/3">
-        {category.title}
-        <div className="text-[15px] py-2">{category.description}</div>
-       
-      </div>
+  
+
           </Link>
         ))}
+               {ProjectsData.map((category) => (
+      <div key={category.id}>
+
       </div>
+
+))}
+
+
+      </div>
+
 
       {/* END */}
     </div>
