@@ -2,7 +2,6 @@ import { ProjectsData } from "@/utils/data";
 import Link from "next/link";
 import React from "react";
 import { LuMonitorStop } from "react-icons/lu";
-import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 
 const Development = () => {
@@ -25,42 +24,17 @@ const Development = () => {
       </div>
       {/* PROJECTS LINK */}
 
-
-      
-      <div className=" ">
-        {ProjectsData.map((category) => (
-          <Link
-            href={category.link}
-            key={category.id}
-            className="text-lg mb-4  justify-center flex flex=row sm:p-4 rounded-xl bg-red-500"
-          >
-            
+      {ProjectsData.map((category) => (
+        <div key={category.id} className="flex  justify-center bg-red-500">
+          <Link href={category.link} key={category.id}>
             {category.image && (
-              <div className="pb-4 sm:pb-0 sm:w-1/3 bg-orange-500 pr-5">
-                <Image
-                  alt=""
-                  className="rounded-lg"
-                  width={400}
-                  height={400}
-                  src={category.image}
-                />
-              </div>
+              <Image alt="" width={400} height={400} src={category.image} />
             )}
-            
-  
-
           </Link>
-        ))}
-               {ProjectsData.map((category) => (
-      <div key={category.id}>
+          {category.title}
 
-      </div>
-
-))}
-
-
-      </div>
-
+        </div>
+      ))}
 
       {/* END */}
     </div>
