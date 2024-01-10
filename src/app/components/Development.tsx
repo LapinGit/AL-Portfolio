@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import { ProjectsData } from "@/utils/data";
 import Link from "next/link";
 import React from "react";
@@ -20,7 +20,7 @@ const Development = () => {
       </div>
       {/* TEXT */}
       <div className="w-[100%] flex justify-center items-center pb-10 ">
-        <p className=" font-sans text-1xl ">
+        <p className=" font-sans text-1xl select-none  ">
           Websites I have designed and coded
         </p>
       </div>
@@ -36,22 +36,22 @@ const Development = () => {
                   width={400}
                   height={250}
                   src={category.image}
-                  className="mx-6 rounded-xl hidden md:block       "
+                  className="mx-6 rounded-xl hidden md:block  hover:scale-105   "
                 />
               )}
             </Link>
             {/* Projects Description */}
-            <div className=" flex-col flex justify-center sm:w-[80%]   md:w-[35%]    ">
-              <div className="flex text-2xl font-bold mb-3    ">
+            <div className=" flex-col flex justify-center sm:w-[80%] md:w-[35%]  ">
+              <div className="flex text-2xl font-bold mb-3 select-none     ">
                 {category.title}
               </div>
-              <div className="z-20 md:min-h-[70px] md:max-w-[100%] rounded-lg p-4 bg-white text-black  ">
+              <div className="select-none  z-20 md:min-h-[70px] md:max-w-[100%] rounded-lg p-4 bg-white text-black  ">
                 {category.description}
               </div>
               {/* Tech tags */}
-              <div className="flex my-4 ">
+              <div className="flex my-4 overflow-x-scroll no-scrollbar overflow-hidden w-[105%] ">
                 {category.technologies.map((tag, i) => (
-                  <span key={i} className="mono mx-3 my-0 sm:text-xs	 ">
+                  <span key={i} className="mono mx-2 sm:text-sm 	 ">
                     {tag}
                   </span>
                 ))}
