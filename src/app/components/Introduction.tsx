@@ -1,4 +1,3 @@
-
 import React from "react";
 
 const Introduction = () => {
@@ -11,8 +10,13 @@ const Introduction = () => {
           <h1 className="text-5xl md:text-7xl mb-6 text-white">
             Alfonso Aurel Lapinoria
           </h1>
-          <h1 className="text-white text-xl md:text-3xl mb-2 font-sans">A fresh graduate from Mapúa University</h1>
-          <p className="text-white mb-2 font-sans"> Aspiring Frontend Developer</p>
+          <h1 className="text-white text-xl md:text-3xl mb-2 font-sans">
+            A graduate from Mapúa University
+          </h1>
+          <p className="text-white mb-2 font-sans">
+            {" "}
+            Aspiring Frontend Developer
+          </p>
         </div>
       </div>
     </div>

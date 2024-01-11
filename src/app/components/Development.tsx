@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { ProjectsData } from "@/utils/data";
 import Link from "next/link";
 import React from "react";
@@ -11,7 +11,7 @@ const Development = () => {
     // wrapper
     <div className="bg-black  text-white  overflow-hidden  ">
       {/* container */}
-      <div className="w-[47%] flex flex-col justify-center items-center pt-8 pb-2 ">
+      <div className="w-[47%] flex flex-col justify-center items-center pt-8 pb-2">
         <div className="text-3xl font-bold mt-14  ">Projects</div>
       </div>
       {/* Computer Icon */}
@@ -29,7 +29,12 @@ const Development = () => {
       {ProjectsData.map((category) => (
         <div className=" sticky max-w-[1200px] mx-auto py-12   ">
           <div className="flex justify-center     ">
-            <Link href={category.link} key={category.id}>
+            <Link
+              href={category.link}
+              key={category.id}
+              target="_blank"
+              rel="noreferrer"
+            >
               {category.image && (
                 <Image
                   alt=""
@@ -62,7 +67,8 @@ const Development = () => {
                     passHref
                     target="_blank"
                     rel="noreferrer"
-                    href={category.source} className=""
+                    href={category.source}
+                    className=""
                   >
                     <AiFillGithub className="btn-icon " />
                   </Link>

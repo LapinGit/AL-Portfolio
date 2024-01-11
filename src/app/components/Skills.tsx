@@ -90,8 +90,8 @@ const Skills = () => {
   return (
     <div className="bg-black">
       {/* Container */}
-      <div className="w-[50%] flex flex-col justify-center items-center pt-8 pb-2">
-        <div className="text-3xl text-white font-bold mt-14 mb-8 ">
+      <div className="w-[50%]  xs:w-[65%]  flex flex-col justify-center items-center pt-8 pb-2 ">
+        <div className="text-3xl font-bold mt-14  text-white items-center justify-center  flex  ">
           Technology
         </div>
       </div>

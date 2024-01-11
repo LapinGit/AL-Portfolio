@@ -15,10 +15,7 @@ const Navbar = () => {
           </div>
           {/* Right side */}
           {/* Menu */}
-          <div className="flex text-white cursor-pointer  sticky  gap-5">
-            <Link href="project">
-              <div>Own Projects</div>
-            </Link>
+          <div className="flex text-white cursor-pointer  sticky  gap-12 xs:gap-5">
             <Link href="resume">
               <div>Resume</div>
             </Link>
