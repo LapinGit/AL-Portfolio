@@ -41,7 +41,7 @@ const Skills = () => {
           <span>{`TypeScript`} </span>
         </div>
       ),
-      icons: [<IoLogoJavascript key="three" />, <SiTypescript key="four" />],
+      icons: [<IoLogoJavascript key="twelve" />, <SiTypescript key="four" />],
     },
     {
       id: 3,

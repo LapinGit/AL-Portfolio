@@ -27,21 +27,18 @@ const Development = () => {
       {/* PROJECTS LINK */}
 
       {ProjectsData.map((category) => (
-        <div className=" sticky max-w-[1200px] mx-auto py-12   ">
+        <div className=" sticky max-w-[1200px] mx-auto py-12" key={category.id}>
           <div className="flex justify-center     ">
-            <Link
-              href={category.link}
-              key={category.id}
-              target="_blank"
-              rel="noreferrer"
-            >
+            <Link href={category.link} target="_blank" rel="noreferrer">
               {category.image && (
                 <Image
                   alt=""
-                  width={400}
-                  height={250}
+                  height={0}
+                  width={340}
+
                   src={category.image}
-                  className="mx-6 rounded-xl hidden md:block  hover:scale-105   "
+                  priority 
+                  className="mx-6 rounded-xl hidden md:block  hover:scale-105  nextimg  "
                 />
               )}
             </Link>

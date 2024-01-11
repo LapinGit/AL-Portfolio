@@ -15,12 +15,16 @@ const Navbar = () => {
           </div>
           {/* Right side */}
           {/* Menu */}
-          <div className="flex text-white cursor-pointer  sticky  gap-12 xs:gap-5">
-            <Link href="resume">
-              <div>Resume</div>
+          <div className="flex text-white   sticky  gap-12 xs:gap-5 ">
+            <Link href="resume  " className="cursor-pointer">
+              <div className=" ">Resume</div>
             </Link>
-            <Link href="contact">
-              <div>Contact</div>
+            <Link
+              href="https://mail.google.com/mail/u/0/?fs=1&to=alfonsolapinoria.work@gmail.com&su=Inquiry&tf=cm "
+              target="_blank"
+              rel="noreferrer"
+              className="cursor-pointer">
+              <div className="">Contact</div>
             </Link>
           </div>
         </div>
