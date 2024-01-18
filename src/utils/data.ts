@@ -10,6 +10,17 @@ type Projects = {
 
 export const ProjectsData: Projects = [
   {
+    id: 0,
+    link: "https://github.com/Wasabi199/MITRF-Mapua",
+    image: "/TechFour.png",
+    title: "Mapúa MITRF System ",
+    description:
+      "A loaning app based on the employee of Mapua University. this is composed of 3 users (User, Admin, Medical) the user who used the website application will  provide the necessary files for the admin.",
+    technologies: ["Vuejs", "Tailwindcss","Laravel","MySql","2023"],
+    source:"https://github.com/Wasabi199/MITRF-Mapua",
+  },
+
+  {
     id: 1,
     link: "https://github.com/LapinGit/FindYourShoePH-FRONTEND-",
     image: "/TechOne.png",
