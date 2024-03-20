@@ -25,7 +25,14 @@ const Footer = () => {
           >
             email
           </a>{" "}
-          or take a look at my resume.
+        
+          or take a look at my {" "}
+          <a href="resume"
+            className="font-extrabold hyperlink "
+            target="_blank"
+            rel="noreferrer"
+          >resume.
+          </a>
         </div>
         {/* LINKS */}
         <div className="flex mt-12  ">
