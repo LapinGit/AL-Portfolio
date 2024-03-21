@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { RxVercelLogo } from "react-icons/rx";
+import { SiRender } from "react-icons/si";
 import { BiLogoNetlify } from "react-icons/bi";
 import { FaGithub } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -12,6 +13,10 @@ import {
   SiPrisma,
   SiPostgresql,
   SiMysql,
+  SiVuedotjs,
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
 } from "react-icons/si";
 import { FaHtml5 } from "react-icons/fa";
 
@@ -21,15 +26,17 @@ const Skills = () => {
       id: 1,
       name: "Storage And Deployment",
       iconnames: (
-        <div className=" text-white text-1xl sm:text-sm sm:gap-5 flex justify-around ">
+        <div className=" text-white text-1xl sm:text-sm sm:gap-5 flex justify-around  ">
           <span>{`Vercel`} </span>
           <span>{`Netlify`} </span> <span>{`Github`}</span>
+          <span className=" sm:ml-5  "> {`Render`} </span>
         </div>
       ),
       icons: [
         <RxVercelLogo key="one" />,
         <BiLogoNetlify key="two" />,
         <FaGithub key="three" />,
+        <SiRender key="thirteen" />,
       ],
     },
     {
@@ -47,11 +54,12 @@ const Skills = () => {
       id: 3,
       name: "Frontend Technologies",
       iconnames: (
-        <div className=" text-white text-1xl sm:text-sm flex justify-around  sm:w-[105%]   lg:w-[101%]   ">
-          <span className=" ml-3	">{`HTML`} </span>
-          <span className=" ml-6">{`React`} </span>
-          <span className=" ml-7 ">{`Next`} </span>
-          <span className=" sm:ml-5  "> {`TailwindCSS`} </span>
+        <div className=" text-white text-1xl sm:text-sm   flex justify-around ">
+          <span className=" flex ml-2 	">{`HTML`} </span>
+          <span className=" flex ml-4">{`React`} </span>
+          <span className="flex ml-6 ">{`Next`} </span>
+          <span className=" flex  "> {`TailwindCSS`} </span>
+          <span className=" flex mr-2"> {`Vuejs`} </span>
         </div>
       ),
       icons: [
@@ -59,6 +67,7 @@ const Skills = () => {
         <SiReact key="six" />,
         <SiNextdotjs key="seven" />,
         <SiTailwindcss key="eight" />,
+        <SiVuedotjs key="fourteen" />,
       ],
     },
     {
@@ -67,9 +76,15 @@ const Skills = () => {
       iconnames: (
         <div className=" text-white text-1xl   flex justify-around ">
           <span>{`Prisma`} </span>
+          <span>{`Express.js`} </span>
+          <span>{`Node.js`} </span>
         </div>
       ),
-      icons: [<SiPrisma key="nine" />],
+      icons: [
+        <SiPrisma key="nine" />,
+        <SiExpress key="fifteen" />,
+        <SiNodedotjs key="sixteen" />,
+      ],
     },
     {
       id: 5,
@@ -77,10 +92,15 @@ const Skills = () => {
       iconnames: (
         <div className=" text-white text-1xl sm:text-sm gap-7 flex justify-around ">
           <span>{`PostgreSQL`} </span>
-          <span className="mr-4">{`MySQL`} </span>
+          <span className="ml-2">{`MySQL`} </span>
+          <span className="mr-4">{`MongoDB`} </span>
         </div>
       ),
-      icons: [<SiPostgresql key="ten" />, <SiMysql key="eleven" />],
+      icons: [
+        <SiPostgresql key="ten" />,
+        <SiMysql key="eleven" />,
+        <SiMongodb key="seventeen" />,
+      ],
     },
   ];
 
@@ -132,11 +152,11 @@ const Skills = () => {
               }`}
             >
               {/* ICONS */}
-              <div className="text-white max-sm:text-sm	sm:gap-6 flex text-5xl justify-around       ">
+              <div className="text-white max-sm:text-sm	sm:gap-6 flex text-5xl justify-around      ">
                 {data.icons}
               </div>
               {/* Icon Name */}
-              <div>{data.iconnames}</div>
+              <div className="">{data.iconnames}</div>
             </div>
           );
         })}
