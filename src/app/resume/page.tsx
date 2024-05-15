@@ -3,7 +3,7 @@ import React from 'react';
 const PrimaryPDF = process.env.PDF_FILE_URL
 
 export const metadata = {
-    title: "Alfonso Lapinoria | Resume",
+    title: "AL | Resume",
 };
 
 export default function Resume() {
