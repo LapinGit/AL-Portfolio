@@ -5,6 +5,7 @@ import React from "react";
 import { LuMonitorStop } from "react-icons/lu";
 import Image from "next/image";
 import { AiFillGithub } from "react-icons/ai";
+import { IoEnterOutline } from "react-icons/io5";
 
 const Development = () => {
   return (
@@ -35,9 +36,8 @@ const Development = () => {
                   alt=""
                   height={0}
                   width={340}
-
                   src={category.image}
-                  priority 
+                  priority
                   className="mx-6 rounded-xl hidden md:block  hover:scale-105  nextimg  "
                 />
               )}
@@ -58,8 +58,8 @@ const Development = () => {
                   </span>
                 ))}
               </div>
-              <div className="flex justify-end w-[100%]   ">
-                <div className="text-2xl  ">
+              <div className="flex justify-end w-[100%] ">
+                <div className="text-2xl flex space-x-2">
                   <Link
                     passHref
                     target="_blank"
@@ -67,8 +67,20 @@ const Development = () => {
                     href={category.source}
                     className=""
                   >
-                    <AiFillGithub className="btn-icon " />
+                    <AiFillGithub className="btn-icon" />
                   </Link>
+
+                  {category.website && (
+                    <Link
+                      passHref
+                      target="_blank"
+                      rel="noreferrer"
+                      href={category.website}
+                      className=""
+                    >
+                      <IoEnterOutline className="btn-icon" />
+                    </Link>
+                  )}
                 </div>
               </div>
             </div>

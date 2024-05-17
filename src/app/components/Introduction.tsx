@@ -1,4 +1,7 @@
 import React from "react";
+import { AiFillGithub } from "react-icons/ai";
+import { ImMail4 } from "react-icons/im";
+import { SiLinkedin } from "react-icons/si";
 
 const Introduction = () => {
   return (
@@ -17,7 +20,37 @@ const Introduction = () => {
             {" "}
             Aspiring Frontend Developer
           </p>
+          <div className="flex mt-12  ">
+          <div className="btn">
+            <a
+              href="https://github.com/LapinGit"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <AiFillGithub className="btn-icon  text-slate-100" />
+            </a>
+          </div>
+          <div className="btn ">
+            <a
+              href="https://mail.google.com/mail/u/0/?fs=1&to=alfonsolapinoria.work@gmail.com&su=Inquiry&tf=cm"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <ImMail4 className="btn-icon  text-slate-100" />
+            </a>
+          </div>
+          <div className="btn ">
+            <a
+              href="https://www.linkedin.com/in/alfonso-aurel-lapinoria-281293250/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <SiLinkedin className="btn-icon  text-slate-100" />
+            </a>
+          </div>
         </div>
+        </div>
+       
       </div>
     </div>
   );

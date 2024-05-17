@@ -6,6 +6,7 @@ type Projects = {
   description: string;
   technologies: string[];
   source: string;
+  website?:string;
 }[];
 
 export const ProjectsData: Projects = [
@@ -29,6 +30,7 @@ export const ProjectsData: Projects = [
       "Community Polling aims to foster discussion and debate by encouraging users to share and evaluate different viewpoints on various topics.",
     technologies: ["Vite", "Tailwindcss","MongoDB","Node","Express", "2024"],
     source: "https://github.com/LapinGit/community-polling",
+    website:"https://community-polling.onrender.com/",
   },
   {
     id: 2,
@@ -39,6 +41,7 @@ export const ProjectsData: Projects = [
       "Trying to improve my front end skills I decided to find any popular Philippine business franchise that doesn't have a website and create one.   ",
     technologies: ["Nextjs", "Tailwindcss", "TypeScript", "2023"],
     source: "https://github.com/LapinGit/AngelsBurgerWebsite-FRONTEND-",
+    website:"https://angels-burger-website-frontend.vercel.app/"
   },
   {
     id: 3,
